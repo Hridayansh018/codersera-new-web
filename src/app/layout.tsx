@@ -25,9 +25,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen`}
       >
-        {children}
+        {/* Video Background */}
+        <video
+          className="fixed top-0 left-0 w-full h-full object-cover -z-20"
+          src="/bg2.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          aria-hidden="true"
+          tabIndex={-1}
+        />
+        {/* Black Overlay with Blur */}
+        {/* <div className="fixed top-0 left-0 w-full h-full bg-black/60 backdrop-blur-xs -z-10 pointer-events-none" /> */}
+        {/* Overlay Content */}
+        <div className="relative z-10 min-h-screen">
+          {children}
+        </div>
       </body>
     </html>
   );

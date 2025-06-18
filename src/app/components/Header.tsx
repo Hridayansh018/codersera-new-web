@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '@/public/logo.png'
+import { FaWhatsapp } from "react-icons/fa";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -41,6 +42,7 @@ const Header = () => {
         <a href='#Events' onClick={e => handleScroll(e, 'Events')} className='hover:text-blue-300  transition-transform duration-300 hover:scale-105 hover:shadow-2xl group overflow-hidden'>Events</a>
         <a href='#Community' className='hover:text-blue-300  transition-transform duration-300 hover:scale-105 hover:shadow-2xl group overflow-hidden'>Community</a>
         <a href='#Footer' className='hover:text-blue-300  transition-transform duration-300 hover:scale-105 hover:shadow-2xl group overflow-hidden'>Contact Us</a>
+        <a href='https://chat.whatsapp.com/IZFWh2YhwNh1Hzl5GDci2F' className='hover:text-blue-300  transition-transform duration-300 hover:scale-105 hover:shadow-2xl group overflow-hidden ml-4'><FaWhatsapp /></a>
       </div>
 
       {/* Mobile Navigation Backdrop */}
@@ -59,6 +61,7 @@ const Header = () => {
           <a href='#Events' onClick={e => handleScroll(e, 'Events')}>Events</a>
           <a href='#Community' onClick={() => setIsMenuOpen(false)}>Community</a>
           <a href='#Footer' onClick={() => setIsMenuOpen(false)}>Contact Us</a>
+          <a href='https://chat.whatsapp.com/IZFWh2YhwNh1Hzl5GDci2F' >Whatsapp</a>
 
         </div>
       </div>

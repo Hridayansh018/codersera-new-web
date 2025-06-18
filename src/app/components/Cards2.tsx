@@ -6,7 +6,7 @@ const communityCards = [
     icon: (
       <svg className="w-10 h-10 text-blue-200 mb-2" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a4 4 0 0 0-3-3.87M9 20H4v-2a4 4 0 0 1 3-3.87m13-6.13a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM9 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm2 14v-2a4 4 0 0 1 3-3.87" /></svg>
     ),
-    color: 'from-blue-900/10 to-blue-700/10',
+    color: 'from-blue-900/20 via-black/20 to-blue-700/20',
     desc: 'Connect with like-minded developers, share ideas, and build lasting professional relationships in our inclusive community.',
     bullets: [
       'Regular community meetups',
@@ -18,9 +18,9 @@ const communityCards = [
   {
     title: 'Skill Development',
     icon: (
-      <svg className="w-10 h-10 text-purple-200 mb-2" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 17v-2m0 0V9m0 6l-2-2m2 2l2-2m-6 6a9 9 0 1 1 18 0 9 9 0 0 1-18 0Z" /></svg>
+      <svg className="w-16 h-10 text-purple-200 mb-2" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 17v-2m0 0V9m0 6l-2-2m2 2l2-2m-6 6a9 9 0 1 1 18 0 9 9 0 0 1-18 0Z" /></svg>
     ),
-    color: 'from-purple-800/10 to-fuchsia-700/10',
+    color: 'from-purple-800/20 via-black/20 to-fuchsia-700/20',
     desc: 'Accelerate your growth with structured learning paths, hands-on workshops, and expert-led training sessions.',
     bullets: [
       'Technical workshops',
@@ -34,7 +34,7 @@ const communityCards = [
     icon: (
       <svg className="w-10 h-10 text-blue-200 mb-2" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M14.5 10.5l-5 5m0 0l-2-2m2 2V21h6v-7.5m-6 0a7.5 7.5 0 1 1 15 0c0 2.485-1.5 4.5-3 4.5s-3-2.015-3-4.5a7.5 7.5 0 0 0-9-7.5" /></svg>
     ),
-    color: 'from-blue-900/10 to-purple-800/10',
+    color: 'from-blue-900/20 via-black/20 to-purple-800/20',
     desc: 'Be part of cutting-edge projects and initiatives that push the boundaries of technology and creativity.',
     bullets: [
       'Hackathon events',

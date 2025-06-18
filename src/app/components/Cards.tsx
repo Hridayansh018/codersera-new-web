@@ -1,20 +1,24 @@
 import React from 'react'
 import Image from 'next/image'
+import event1 from "../../../public/ai.jpeg"
+import event2 from "../../../public/hackathon.jpeg"
+import event3 from "../../../public/cloud.jpeg"
+
 
 const events = [
   {
     title: 'AI Workshop',
-    image: '/AI.jpeg',
+    image: event1,
     desc: 'Learn the basics of Artificial Intelligence and Machine Learning',
   },
   {
     title: 'Hackathon 2024',
-    image: '/Hackathon.jpeg',
+    image: event2,
     desc: '24 to 48-hour coding challenge with amazing prizes',
   },
   {
     title: 'Cloud Bootcamp',
-    image: '/cloud.jpeg',
+    image: event3,
     desc: 'Intensive training on modern cloud technologies',
   },
 ];

@@ -68,7 +68,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-2">
               <span className="text-[#8b7cf6]">📞</span>
-              <span>+91 9170806003 (President)</span>
+              <span>+91 91708 06003(President)</span>
             </div>
           </div>
           {/* Join Our Community */}

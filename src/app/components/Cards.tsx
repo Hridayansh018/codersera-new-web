@@ -12,7 +12,7 @@ const events = [
     desc: 'Learn the basics of Artificial Intelligence and Machine Learning',
   },
   {
-    title: 'Hackathon 2024',
+    title: 'Hackathon 2025',
     image: event2,
     desc: '24 to 48-hour coding challenge with amazing prizes',
   },

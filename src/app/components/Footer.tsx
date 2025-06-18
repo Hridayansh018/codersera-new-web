@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <div className='bg-black/60 backdrop-blur-xs'>
+    <div className='bg-black/60 backdrop-blur-xs' id='Footer'>
       <section className=" text-[#b3b8c5] py-12 px-4 md:px-16 ">
         <h2 className="text-3xl md:text-4xl font-bold text-[#a084f7] text-center mb-10">Contact Us</h2>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

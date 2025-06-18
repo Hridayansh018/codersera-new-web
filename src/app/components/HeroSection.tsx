@@ -1,5 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const HeroSection = () => {
   const [loaded, setLoaded] = useState(false);
@@ -22,11 +23,14 @@ const HeroSection = () => {
         }} />
         {/* Left: Logo */}
         <div className="relative z-10 flex justify-center items-center w-full md:w-1/2 p-4">
-          <img
+          <Image
             src="/rlogo.png"
             alt="Coders ERA Logo"
+            width={320}
+            height={320}
             className="w-56 h-56 md:w-80 md:h-80 object-contain rounded-2xl shadow-xl animate-hero-pulse"
             style={{ maxWidth: '100%', height: 'auto' }}
+            priority
           />
         </div>
         {/* Right: Welcome and Description */}

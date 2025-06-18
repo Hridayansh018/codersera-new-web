@@ -75,7 +75,10 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold text-[#8b7cf6] mb-4">Join Our Community</h3>
             <p className="mb-4">Be part of our growing tech community!</p>
-            <button className="bg-gradient-to-r from-[#4f8cff] to-[#6a5af9] text-white font-semibold px-8 py-3 rounded-lg shadow hover:from-[#6a5af9] hover:to-[#4f8cff] transition">Join Now</button>
+            <div className='flex flex-col gap-4'>
+              <a href='https://docs.google.com/forms/d/e/1FAIpQLSdIEVan1Obj0aM2y1sf6obF5lTYxjbHlvyC8nyDQj7w_uaxfQ/viewform?pli=1' className="bg-gradient-to-r text-center from-[#4f8cff] to-[#6a5af9] text-white font-semibold px-8 py-3 rounded-lg shadow hover:from-[#6a5af9] hover:to-[#4f8cff] transition">Join Now</a>
+              <a href='https://chat.whatsapp.com/IZFWh2YhwNh1Hzl5GDci2F' className="bg-gradient-to-r text-center from-[#4f8cff] to-[#6a5af9] text-white font-semibold px-8 py-3 rounded-lg shadow hover:from-[#6a5af9] hover:to-[#4f8cff] transition">Join Whatsapp Group</a>
+            </div>
           </div>
           {/* Our Team Card */}
           <div>
@@ -85,6 +88,7 @@ const Footer = () => {
               <h4 className="text-lg font-bold text-white mb-2">Meet Our Team</h4>
               <p className="mb-4 text-center text-[#b3b8c5]">Learn more about the brilliant minds behind Coders ERA.</p>
               <a href='https://coder-era-team.vercel.app/' className="bg-gradient-to-r from-[#4f8cff] to-[#6a5af9] text-white font-semibold px-6 py-2 rounded-lg shadow hover:from-[#6a5af9] hover:to-[#4f8cff] transition">View Team</a>
+              
             </div>
           </div>
         </div>

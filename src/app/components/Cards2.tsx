@@ -47,8 +47,8 @@ const communityCards = [
 
 const Cards2 = () => {
   return (
-    <section className="w-full min-h-[60vh] py-16 px-2 md:px-8 flex flex-col items-center justify-center bg-white/10">
-      <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12 bg-black/80 hover:shadow-fuchsia-300/30 shadow-lg transition-all ease-in-out p-5 px-20 rounded-xl">Join Our Community</h2>
+    <section  id="Community" className="w-full min-h-[60vh] py-16 px-2 md:px-8 flex flex-col items-center justify-center bg-white/10">
+      <h2 className="text-2xl md:text-4xl font-bold text-white text-center mb-12 bg-black/80 hover:shadow-fuchsia-300/30 shadow-lg transition-all ease-in-out p-5 px-20 rounded-xl">Join Our Community</h2>
       <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-8">
         {communityCards.map((card, idx) => (
           <div

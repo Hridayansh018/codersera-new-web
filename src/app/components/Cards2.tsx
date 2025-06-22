@@ -50,7 +50,7 @@ const Cards2 = () => {
     <section  id="Community" className="w-full min-h-[60vh] py-16 px-2 md:px-8 flex flex-col items-center justify-center bg-white/10">
       <h2 className="text-2xl md:text-4xl font-bold text-white text-center mb-12 bg-black/80 hover:shadow-fuchsia-300/30 shadow-lg transition-all ease-in-out p-5 px-20 rounded-xl">Join Our Community</h2>
       <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-8">
-        {communityCards.map((card, idx) => (
+        {communityCards.map((card) => (
           <div
             key={card.title}
             className={`relative rounded-2xl p-8 bg-gradient-to-br ${card.color} bg-opacity-80 backdrop-blur-xl shadow-xl border border-white/10 flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-2xl group overflow-hidden`}

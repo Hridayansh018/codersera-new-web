@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function AboutPage() {
   return (
-    <div>
+    <div className="bg-transparent">
       {/* Hero Section */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
@@ -51,7 +51,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <motion.div 
-                className="relative rounded-xl overflow-hidden shadow-xl bg-white/10 backdrop-blur-sm p-8"
+                className="relative rounded-xl overflow-hidden shadow-xl bg-white/5 backdrop-blur-sm p-8"
                 whileHover={{ scale: 1.05, boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.1)"}}
                 transition={{ duration: 0.3 }}
               >

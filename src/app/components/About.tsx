@@ -61,7 +61,7 @@ const About = () => {
       <h1 className='text-2xl sm:text-3xl md:text-4xl text-white text-center mb-8 sm:mb-10 md:mb-12 font-bold bg-black/60 px-6 sm:px-16 md:px-20 hover:text-cyan-100 hover:shadow-white/20 shadow-xl transition-all ease-in-out backdrop-blur-xs rounded-xl p-4 sm:p-5'>About Us</h1>
       {/* Features */}
       <div className="w-full max-w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-10 sm:mb-16">
-        {features.map((feature, idx) => (
+        {features.map((feature) => (
           <div
             key={feature.title}
             className={`relative rounded-2xl p-4 sm:p-8 bg-black/10 backdrop-blur-xl shadow-xl border border-white/10 transition-transform duration-300 hover:scale-105 hover:shadow-2xl group overflow-hidden`}

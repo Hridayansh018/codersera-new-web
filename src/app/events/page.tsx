@@ -151,7 +151,7 @@ export default function EventsPage() {
 
 
           {/* CURRENTLY THE EVENTS ARE ON HOLDE, WILL BE ADDED LATER, INSTEAD WERE GONNA DISPLAY A BIG 'COMONG SOON' */}
-          <h1 className='text-9xl font-semibold text-center mt-10 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent py-5'>coming soon</h1>
+          <h3 className='text-9xl font-semibold text-center mt-10 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent py-5'>coming soon</h3>
           {/* Events Grid */}
           {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredEvents.map((event, index) => (

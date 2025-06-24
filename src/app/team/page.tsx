@@ -156,7 +156,7 @@ const coreMembers: TeamMember[] = [
         instagram: 'https://www.instagram.com/vanshika_736/'
     },
     {
-        img: '/photos/kajal.jpg',
+        img: '/photos/KAJAL.jpg',
         name: 'KAJAL MISHRA',
         position: 'COORDINATOR ',
         linkedin: '#',
@@ -219,7 +219,7 @@ const coreMembers: TeamMember[] = [
         instagram: 'https://www.instagram.com/varnika_ojha/'
     },
     {
-        img: '/photos/kaustubhi.jpg',
+        img: '/photos/KAUSTUBHI.jpg',
         name: 'KAUSTUBHI DUTTA',
         position: 'COORDINATOR ',
         linkedin: '#',
@@ -233,14 +233,14 @@ const coreMembers: TeamMember[] = [
         instagram: '#'
     },
     {
-        img: '/photos/anshika.jpg',
+        img: '/photos/ANSHIKA.jpg',
         name: 'ANSHIKA MISHRA ',
         position: 'MEDIA TEAM ',
         linkedin: '#',
         instagram: '#'
     },
     {
-        img: '/photos/kavya.jpg',
+        img: '/photos/KAVYA.jpg',
         name: 'KAVYA PANT',
         position: 'MEDIA TEAM ',
         linkedin: '#',

@@ -140,7 +140,14 @@ const coreMembers: TeamMember[] = [
         position: 'CSE LEAD',
         linkedin: '#',
         instagram: 'https://www.instagram.com/mrveer_official/'
-    },  
+    }, 
+    {
+        img:'/photos/sneha.jpg',
+        name:"SNEHA",
+        position:'CSE LEAD',
+        linkedin:'https://www.linkedin.com/in/sneha-773179346/',
+        instagram:'https://www.instagram.com/r.u.sneha/',
+    },
     {
         img: '/photos/van.jpg',
         name: 'VANSHIKA TYAGI ',
@@ -197,7 +204,13 @@ const coreMembers: TeamMember[] = [
         linkedin: '#',
         instagram: 'https://www.instagram.com/iownxeno/'
     },
-
+    {
+        img: '/photos/shreyapatha.jpg',
+        name: 'SHREYA',
+        position: 'COORDINATOR',
+        linkedin: 'https://www.linkedin.com/in/shreyapathak01/',
+        instagram: 'https://www.instagram.com/.shreyaah.?igsh=bmNwcnBuMmhjanJr'
+    },
     {
         img: '/photos/varnika.jpg',
         name: 'VARNIKA OJHA',
@@ -274,7 +287,14 @@ const coreMembers: TeamMember[] = [
         position: 'COORDINATOR ',
         linkedin: '#',
         instagram: '#'
-    }
+    },
+    {
+        img:'/photos/neelu.jpg',
+        name:"NEELAKSH",
+        position:'COORDINATOR',
+        linkedin:'https://www.linkedin.com/in/neelaksh-sharma-b66665335/',
+        instagram:'https://www.instagram.com/nee_lakshsharma/',
+    },
 ].map(member => {
     if (member.img && !member.img.startsWith('/photos/')) {
         member.img = `/photos/${member.img}`;
@@ -290,18 +310,18 @@ const TeamMemberCard = ({ member, index }: { member: TeamMember, index: number }
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-        <div className="relative h-[450px] w-full">
+        <div className="relative h-[230px] w-full ">
             <Image 
                 src={member.img} 
                 alt={member.name} 
                 fill
-                className="object-cover" 
+                className="object-cover rounded-full" 
                 onError={(e) => { e.currentTarget.src = '/photos/logo.jpg'; }} // Fallback image
             />
         </div>
         <div className="p-6">
-            <h3 className="text-xl font-bold mb-1 text-white">{member.name}</h3>
-            <p className="text-blue-400 mb-4">{member.position}</p>
+            <h3 className="text-md font-bold mb-1 text-white">{member.name}</h3>
+            <p className="text-blue-400 mb-4 text-sm">{member.position}</p>
             <div className="flex space-x-4">
                 {member.linkedin && member.linkedin !== '#' && (
                     <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500">
@@ -344,7 +364,7 @@ export default function TeamPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center text-white">Our Leaders</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {leaders.map((member, index) => (
               <TeamMemberCard key={index} member={member} index={index} />
             ))}
@@ -356,7 +376,7 @@ export default function TeamPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center text-white">Core Members</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {coreMembers.map((member, index) => (
               <TeamMemberCard key={index} member={member} index={index} />
             ))}

@@ -5,6 +5,8 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { BackgroundAnimation } from "@/components/common/BackgroundAnimation";
+// import logimg from '../../public/logo.jpg'
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
   title: "CodersEra - Tech Community",
   description: "A tech community for networking, learning, and collaboration",
   icons: {
-    icon: "/logo.jpg",
+    icon: "../../public/logo.jpg",
   },
 };
 

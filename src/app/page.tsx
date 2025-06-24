@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BackgroundAnimation } from '@/components/common/BackgroundAnimation';
+// import Image from 'next/image';
+// import trlogo from '../../public/rlogo.png'
 
 // Animation variants
 const fadeIn = {
@@ -77,6 +79,9 @@ export default function Home() {
               variants={fadeIn}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
+
+            {/* <div className='mx-64 h-32'><Image src={trlogo} alt='tr logo' width={50} height={50} className='items-center justify-center' /></div> */}
+
               <div className="relative w-full max-w-lg mx-auto">
                 {/* Glowing computer screen effect */}
                 <div className="absolute inset-0 -m-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl blur-xl opacity-30 animate-pulse"></div>

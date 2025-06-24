@@ -184,7 +184,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white">Email</h3>
-                    <p className="text-gray-300 mt-1">info@codersera.com</p>
+                    <p className="text-gray-300 mt-1">coders.eraa@gmail.com</p>
                     <p className="text-gray-400 mt-1">We aim to respond within 24 hours.</p>
                   </div>
                 </div>
@@ -198,8 +198,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white">Location</h3>
-                    <p className="text-gray-300 mt-1">Plot 14, Knowledge park 2</p>
-                    <p className="text-gray-300">Greater Noida, Uttar Pradesh - India</p>
+                    <p className="text-gray-300 mt-1">Noida Institute of Engineering And Technology, Knowledge park 2</p>
+                    <p className="text-gray-300">Greater Noida, Uttar Pradesh,201310 - India</p>
                     <p className="text-gray-400 mt-1">Our office is open Monday-Friday, 9am-5pm.</p>
                   </div>
                 </div>

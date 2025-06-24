@@ -305,12 +305,12 @@ const coreMembers: TeamMember[] = [
 
 const TeamMemberCard = ({ member, index }: { member: TeamMember, index: number }) => (
     <motion.div 
-        className="bg-white/10 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105 transform cursor-pointer backdrop-blur-sm"
+        className="bg-white/10 rounded-xl md:min-w-[200px] lg:min-w-[230px] shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105 transform cursor-pointer backdrop-blur-sm"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-        <div className="relative h-[230px] w-full ">
+        <div className="relative h-[170px] md:h-[210px] lg:h-[240px] w-full mt-2">
             <Image 
                 src={member.img} 
                 alt={member.name} 
@@ -320,8 +320,8 @@ const TeamMemberCard = ({ member, index }: { member: TeamMember, index: number }
             />
         </div>
         <div className="p-6">
-            <h3 className="text-md font-bold mb-1 text-white">{member.name}</h3>
-            <p className="text-blue-400 mb-4 text-sm">{member.position}</p>
+            <h3 className="text-[13px] lg:text-md font-bold mb-1 text-white">{member.name}</h3>
+            <p className="text-blue-400 mb-4 text-[10px] lg:text-sm">{member.position}</p>
             <div className="flex space-x-4">
                 {member.linkedin && member.linkedin !== '#' && (
                     <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500">

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title: "CodersEra - Tech Community",
   description: "A tech community for networking, learning, and collaboration",
   icons: {
-    icon: "../../public/logo.jpg",
+    icon: "/logo.jpg",
   },
 };
 

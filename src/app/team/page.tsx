@@ -149,7 +149,7 @@ const coreMembers: TeamMember[] = [
         instagram: 'https://www.instagram.com/vanshika_736/'
     },
      {
-        img: '/photos/van.jpg',
+        img: '/photos/simmi.jpg',
         name: 'SIMMI SINGH ',
         position: 'IOT LEAD',
         linkedin: 'https://www.linkedin.com/in/simmisingh1?trk=contact-info',

@@ -148,6 +148,13 @@ const coreMembers: TeamMember[] = [
         linkedin: '#',
         instagram: 'https://www.instagram.com/vanshika_736/'
     },
+     {
+        img: '/photos/van.jpg',
+        name: 'SIMMI SINGH ',
+        position: 'IOT LEAD',
+        linkedin: 'https://www.linkedin.com/in/simmisingh1?trk=contact-info',
+        instagram: 'https://www.instagram.com/simmiiii_singh?igsh=MndlaG85Zno2Nngy'
+    },
     {
         img: '/photos/kajal.jpg',
         name: 'KAJAL MISHRA',

@@ -68,12 +68,12 @@ const coreMembers: TeamMember[] = [
         img: '/photos/arush.jpg',
         name: 'ARUSH MISHRA',
         position: 'AI-LEAD',
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/arush-mishra-4aba3732a/',
         instagram: 'https://www.instagram.com/not.arush/'
     },
     {
         img: '/photos/pratyaksh.jpg',
-        name: 'PRTYAKSH',
+        name: 'PRATYAKSH',
         position: 'AI-LEAD',
         linkedin: '#',
         instagram: 'https://www.instagram.com/pratyaksh_1627/'
@@ -82,7 +82,7 @@ const coreMembers: TeamMember[] = [
         img: '/photos/madhur.jpg',
         name: 'MADHUR RASTOGI',
         position: 'AIML-LEAD',
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/madhur-rastogi-653481324/',
         instagram: 'https://www.instagram.com/its.madhur_.19/'
     },
     {
@@ -96,49 +96,49 @@ const coreMembers: TeamMember[] = [
         img: '/photos/ansh.jpg',
         name: 'ANSH SINGH',
         position: 'DS-LEAD',
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/ansh-singh-b398a2326/',
         instagram: 'https://www.instagram.com/rqwler/'
     },
     {
         img: '/photos/KARTIKEY.webp',
         name: 'KARTIKEY',
         position: 'DS LEAD',
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/kartike-gupta-039798243/',
         instagram: 'https://www.instagram.com/_kartiike_/'
     },
     {
         img: '/photos/KISHAN.jpg',
         name: 'KISHAN',
         position: 'IT LEAD',
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/kishan-singh-5b1505348/',
         instagram: '#'
     },
     {
         img: '/photos/AMIT.jpg',
         name: 'AMIT',
         position: 'IT LEAD',
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/amit-gupta-0a5292210/',
         instagram: '#'
     },
     {
         img: '/photos/hardy.png',
         name: 'HRIDYANSH',
         position: 'TECH-LEAD',
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/hridayansh-awasthi-0095a12b6/',
         instagram: 'https://www.instagram.com/__hridayansh/'
     },
     {
         img: '/photos/AYUSH.jpg',
-        name: 'AYUSH',
+        name: 'AAYUSH',
         position: 'CYS LEAD',
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/aayush-pratap-singh-5a0b71340/',
         instagram: 'https://www.instagram.com/aayush_p.s/'
     },
     {
         img: '/photos/VEER.jpg',
         name: 'VIJENDRA',
         position: 'CSE LEAD',
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/vijendra-pratap-singh-67a752346/',
         instagram: 'https://www.instagram.com/mrveer_official/'
     }, 
     {
@@ -152,7 +152,7 @@ const coreMembers: TeamMember[] = [
         img: '/photos/van.jpg',
         name: 'VANSHIKA TYAGI ',
         position: 'IOT LEAD',
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/vanshika-tyagi-01a528334/',
         instagram: 'https://www.instagram.com/vanshika_736/'
     },
      {
@@ -167,13 +167,13 @@ const coreMembers: TeamMember[] = [
         name: 'KAJAL MISHRA',
         position: 'COORDINATOR ',
         linkedin: '#',
-        instagram: '#'
+        instagram: 'https://www.instagram.com/kajallmishra_/'
     },          
     {
         img: '/photos/divyanshi.jpg',
         name: 'DIVYANSHI',
         position: 'COORDINATOR',
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/divyanshi-goyal-b13411359/',
         instagram: 'https://www.instagram.com/divyanshi_goyl/'
     },
     {
@@ -194,7 +194,7 @@ const coreMembers: TeamMember[] = [
         img: '/photos/SRISHTI.jpg',
         name: 'SRISHTI',
         position: 'COORDINATOR',
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/srishti-kumari-9867b6332/',
         instagram: 'https://www.instagram.com/srishtiii_kumari/'
     },
     {
@@ -208,7 +208,7 @@ const coreMembers: TeamMember[] = [
         img: '/photos/aaditya.jpg',
         name: 'AADITYA SRIVASTAVA',
         position: 'COORDINATOR & EDITOR',
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/im2aaditya/',
         instagram: 'https://www.instagram.com/iownxeno/'
     },
     {
@@ -229,57 +229,57 @@ const coreMembers: TeamMember[] = [
         img: '/photos/KAUSTUBHI.jpg',
         name: 'KAUSTUBHI DUTTA',
         position: 'COORDINATOR ',
-        linkedin: '#',
-        instagram: '#'
+        linkedin: 'https://www.linkedin.com/in/kaustubhi-dutta-880879348/',
+        instagram: 'https://www.instagram.com/kaustubhii.12/'
     },
     {
         img: '/photos/vanshika.jpg',
         name: 'VANSHIKA SINGH',
         position: 'COORDINATOR ',
         linkedin: '#',
-        instagram: '#'
+        instagram: 'https://www.instagram.com/vanshika_736/'
     },
     {
         img: '/photos/ANSHIKA.jpg',
         name: 'ANSHIKA MISHRA ',
         position: 'MEDIA TEAM ',
         linkedin: '#',
-        instagram: '#'
+        instagram: 'https://www.instagram.com/anseekaa/'
     },
     {
         img: '/photos/KAVYA.jpg',
         name: 'KAVYA PANT',
         position: 'MEDIA TEAM ',
         linkedin: '#',
-        instagram: '#'
+        instagram: 'https://www.instagram.com/justletitbe28/'
     },
     {
         img: '/photos/keshav.jpg',
         name: 'KESHAV',
         position: 'COORDINATOR ',
-        linkedin: '#',
-        instagram: '#'
+        linkedin: 'https://www.linkedin.com/in/keshav-mehta-998985353/',
+        instagram: 'https://www.instagram.com/___its.keshav/'
     },
     {
         img: '/photos/lakshya.jpg',
         name: 'LAKSHYA',
         position: 'COORDINATOR ',
-        linkedin: '#',
-        instagram: '#'
+        linkedin: 'https://www.linkedin.com/in/lakshya-mishra-315953323/',
+        instagram: 'https://www.instagram.com/lakshya.mishra7/'
     },
     {
         img: '/photos/rishu.jpg',
         name: 'RISHU JHA',
         position: 'COORDINATOR ',
-        linkedin: '#',
-        instagram: '#'
+        linkedin: 'https://www.linkedin.com/in/rishu-jha-18840b318/',
+        instagram: 'https://www.instagram.com/rishab.1817/'
     },
     {
         img: '/photos/aakrity.jpg',
         name: 'AAKRITY SINGH',
         position: 'COORDINATOR ',
         linkedin: '#',
-        instagram: '#'
+        instagram: 'https://www.instagram.com/_aakrity.singh__/'
     },
     {
         img: '/photos/divyanshu.jpg',

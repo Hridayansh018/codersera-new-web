@@ -3,6 +3,9 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useState } from 'react';
+import Image, { StaticImageData } from 'next/image';
+
+import codesphere from '../../../public/codesphere.jpg';
 
 type Event = {
   id: number;
@@ -12,70 +15,28 @@ type Event = {
   location: string;
   type: 'hackathon' | 'webinar' | 'workshop' | 'meetup';
   description: string;
-  image: string;
+  image: StaticImageData;
 };
 
 const upcomingEvents: Event[] = [
   {
     id: 1,
-    title: 'Web Development Bootcamp',
-    date: 'June 15, 2024',
-    time: '10:00 AM - 4:00 PM',
-    location: 'Virtual',
+    title: 'Codesphere',
+    date: 'August 21, 2025',
+    time: '10:00 AM',
+    location: 'NIET, Greater noida',
     type: 'workshop',
-    description: 'A comprehensive bootcamp covering modern web development technologies including React, Next.js, and more.',
-    image: '/workshop.jpg'
+    description: 'An intensive coding workshop designed to enhance your programming skills and connect with fellow developers.',
+    image: codesphere
   },
-  {
-    id: 2,
-    title: 'CodersEra Annual Hackathon',
-    date: 'July 8-10, 2024',
-    time: 'All day',
-    location: 'Tech Hub Center',
-    type: 'hackathon',
-    description: 'Join us for 48 hours of coding, collaboration, and innovation. Solve real-world problems and win amazing prizes!',
-    image: '/hackathon.jpg'
-  },
-  {
-    id: 3,
-    title: 'AI in Modern Applications',
-    date: 'June 25, 2024',
-    time: '6:00 PM - 8:00 PM',
-    location: 'Virtual',
-    type: 'webinar',
-    description: 'Learn how to integrate AI capabilities into your applications with practical examples and best practices.',
-    image: '/webinar.jpg'
-  },
-  {
-    id: 4,
-    title: 'Networking Mixer',
-    date: 'June 30, 2024',
-    time: '7:00 PM - 9:00 PM',
-    location: 'Downtown Cafe',
-    type: 'meetup',
-    description: 'Connect with fellow developers in a casual setting. Share experiences, exchange ideas, and build your network.',
-    image: '/meetup.jpg'
-  },
-  {
-    id: 5,
-    title: 'Mobile App Development Workshop',
-    date: 'July 20, 2024',
-    time: '11:00 AM - 3:00 PM',
-    location: 'Tech Innovation Center',
-    type: 'workshop',
-    description: 'Hands-on workshop on building cross-platform mobile applications using React Native and Flutter.',
-    image: '/workshop.jpg'
-  },
-  {
-    id: 6,
-    title: 'Cloud Computing Fundamentals',
-    date: 'August 5, 2024',
-    time: '2:00 PM - 4:00 PM',
-    location: 'Virtual',
-    type: 'webinar',
-    description: 'Introduction to cloud computing concepts, services, and deployment models with practical demonstrations.',
-    image: '/webinar.jpg'
-  }
+];
+
+const filterButtons = [
+  { key: 'all', label: 'All Events' },
+  { key: 'hackathon', label: 'Hackathons' },
+  { key: 'webinar', label: 'Webinars' },
+  { key: 'workshop', label: 'Workshops' },
+  { key: 'meetup', label: 'Meetups' },
 ];
 
 export default function EventsPage() {
@@ -86,7 +47,7 @@ export default function EventsPage() {
     : upcomingEvents.filter(event => event.type === filter);
 
   return (
-    <div>
+    <div className="min-h-screen">
       {/* Hero Section */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
@@ -116,87 +77,120 @@ export default function EventsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <button 
-              onClick={() => setFilter('all')} 
-              className={`px-6 py-2 rounded-full ${filter === 'all' ? 'bg-blue-600 text-white' : 'bg-white/10 text-gray-300'} hover:bg-blue-500 hover:text-white transition-colors backdrop-blur-sm`}
-            >
-              All Events
-            </button>
-            <button 
-              onClick={() => setFilter('hackathon')} 
-              className={`px-6 py-2 rounded-full ${filter === 'hackathon' ? 'bg-blue-600 text-white' : 'bg-white/10 text-gray-300'} hover:bg-blue-500 hover:text-white transition-colors backdrop-blur-sm`}
-            >
-              Hackathons
-            </button>
-            <button 
-              onClick={() => setFilter('webinar')} 
-              className={`px-6 py-2 rounded-full ${filter === 'webinar' ? 'bg-blue-600 text-white' : 'bg-white/10 text-gray-300'} hover:bg-blue-500 hover:text-white transition-colors backdrop-blur-sm`}
-            >
-              Webinars
-            </button>
-            <button 
-              onClick={() => setFilter('workshop')} 
-              className={`px-6 py-2 rounded-full ${filter === 'workshop' ? 'bg-blue-600 text-white' : 'bg-white/10 text-gray-300'} hover:bg-blue-500 hover:text-white transition-colors backdrop-blur-sm`}
-            >
-              Workshops
-            </button>
-            <button 
-              onClick={() => setFilter('meetup')} 
-              className={`px-6 py-2 rounded-full ${filter === 'meetup' ? 'bg-blue-600 text-white' : 'bg-white/10 text-gray-300'} hover:bg-blue-500 hover:text-white transition-colors backdrop-blur-sm`}
-            >
-              Meetups
-            </button>
+            {filterButtons.map((button) => (
+              <button 
+                key={button.key}
+                onClick={() => setFilter(button.key)} 
+                className={`px-6 py-2 rounded-full font-medium transition-all duration-300 backdrop-blur-sm ${
+                  filter === button.key 
+                    ? 'bg-blue-600 text-white shadow-lg' 
+                    : 'bg-white/10 text-gray-300 hover:bg-blue-500 hover:text-white'
+                }`}
+              >
+                {button.label}
+              </button>
+            ))}
           </motion.div>
-          
 
+          {/* Coming Soon Message */}
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h1 className='text-6xl md:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent py-5 leading-tight'>
+              Coming Soon
+            </h1>
+            <p className="text-gray-400 text-lg mt-4">Stay tuned for exciting events and workshops!</p>
+          </motion.div>
 
-          {/* CURRENTLY THE EVENTS ARE ON HOLDE, WILL BE ADDED LATER, INSTEAD WERE GONNA DISPLAY A BIG 'COMONG SOON' */}
-          <h1 className='text-9xl font-semibold text-center mt-10 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent py-5'>coming soon</h1>
           {/* Events Grid */}
-          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {filteredEvents.map((event, index) => (
               <motion.div 
                 key={event.id}
-                className="bg-white/10 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105 transform cursor-pointer backdrop-blur-sm"
+                className="bg-white/10 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105 transform cursor-pointer backdrop-blur-sm border border-white/20"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="h-48 bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center p-4 text-white">
-                  <div className="text-center">
-                    <span className="text-sm uppercase tracking-wider bg-white/20 px-3 py-1 rounded-full">{event.type}</span>
-                    <h3 className="text-xl font-bold mt-2">{event.title}</h3>
-                  </div>
+                {/* Image Header */}
+                <div className="relative h-96 w-full bg-gradient-to-r from-blue-500 to-purple-600 overflow-hidden">
+                  <Image
+                    src={event.image}
+                    alt={event.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover"
+                  />
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black/20" />
+                  
+                  {/* Event Type Badge */}
+                  {/* <div className="absolute top-4 right-4">
+                    <span className={`px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide text-white ${
+                      event.type === 'workshop' ? 'bg-green-500/80' :
+                      event.type === 'hackathon' ? 'bg-red-500/80' :
+                      event.type === 'webinar' ? 'bg-blue-500/80' :
+                      'bg-purple-500/80'
+                    }`}>
+                      {event.type}
+                    </span>
+                  </div> */}
                 </div>
+
+                {/* Content */}
                 <div className="p-6">
-                  <div className="flex items-center mb-4 text-gray-400">
-                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                    <span>{event.date}</span>
+                  {/* Title */}
+                  <h2 className="text-2xl font-bold text-white mb-4">{event.title}</h2>
+                  
+                  {/* Event Details */}
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center text-gray-400 text-sm">
+                      <svg className="w-4 h-4 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                      <span className="font-medium">{event.date}</span>
+                    </div>
+                    
+                    <div className="flex items-center text-gray-400 text-sm">
+                      <svg className="w-4 h-4 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>{event.time}</span>
+                    </div>
+                    
+                    <div className="flex items-center text-gray-400 text-sm">
+                      <svg className="w-4 h-4 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      <span>{event.location}</span>
+                    </div>
                   </div>
-                  <div className="flex items-center mb-4 text-gray-400">
-                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <span>{event.time}</span>
-                  </div>
-                  <div className="flex items-center mb-4 text-gray-400">
-                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                    </svg>
-                    <span>{event.location}</span>
-                  </div>
-                  <p className="text-gray-300 mb-6">{event.description}</p>
-                  <button className="w-full px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-300 hover:scale-105 transform">
+                  
+                  {/* Description */}
+                  {event.description && (
+                    <p className="text-gray-300 mb-6 text-sm leading-relaxed line-clamp-3">
+                      {event.description}
+                    </p>
+                  )}
+                  
+                  {/* Register Button */}
+                  <motion.button 
+                    className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
                     Register Now
-                  </button>
+                  </motion.button>
                 </div>
               </motion.div>
             ))}
-          </div> */}
+          </div>
           
+          {/* No Events Message */}
           {filteredEvents.length === 0 && (
             <motion.div 
               className="text-center py-12"
@@ -204,7 +198,13 @@ export default function EventsPage() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <p className="text-xl text-gray-400">No events found for this category. Check back soon!</p>
+              <div className="bg-white/10 rounded-xl p-8 backdrop-blur-sm border border-white/20 max-w-md mx-auto">
+                <svg className="w-16 h-16 mx-auto mb-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <p className="text-xl text-gray-400 mb-2">No events found</p>
+                <p className="text-gray-500">Check back soon for new events in this category!</p>
+              </div>
             </motion.div>
           )}
         </div>
@@ -214,7 +214,7 @@ export default function EventsPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <motion.div 
-            className="text-center"
+            className="text-center bg-white/5 rounded-2xl p-12 backdrop-blur-sm border border-white/10"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -226,7 +226,7 @@ export default function EventsPage() {
             </p>
             <Link 
               href="/contact"
-              className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform inline-block"
+              className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               Contact Us
             </Link>

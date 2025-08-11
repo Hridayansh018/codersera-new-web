@@ -16,18 +16,20 @@ type Event = {
   type: 'hackathon' | 'webinar' | 'workshop' | 'meetup';
   description: string;
   image: StaticImageData;
+  link: string;
 };
 
 const upcomingEvents: Event[] = [
   {
     id: 1,
     title: 'Codesphere',
-    date: 'August 21, 2025',
+    date: 'August 22, 2025',
     time: '10:00 AM',
     location: 'NIET, Greater noida',
     type: 'workshop',
-    description: 'An intensive coding workshop designed to enhance your programming skills and connect with fellow developers.',
-    image: codesphere
+    description: 'CodeSphere 2025 – a 6-hour speaker session that brings together top minds from the tech world!',
+    image: codesphere,
+    link:'https://devnovate.co/event/codesphere-2025'
   },
 ];
 
@@ -93,7 +95,7 @@ export default function EventsPage() {
           </motion.div>
 
           {/* Coming Soon Message */}
-          <motion.div
+          {/* <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -103,7 +105,7 @@ export default function EventsPage() {
               Coming Soon
             </h1>
             <p className="text-gray-400 text-lg mt-4">Stay tuned for exciting events and workshops!</p>
-          </motion.div>
+          </motion.div> */}
 
           {/* Events Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -178,13 +180,16 @@ export default function EventsPage() {
                   )}
                   
                   {/* Register Button */}
-                  <motion.button 
-                    className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                  <motion.a
+                    className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl text-center block"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
+                    href={event.link}
+                    target="_blank" // optional: opens in new tab
+                    rel="noopener noreferrer" // optional: security best practice
                   >
                     Register Now
-                  </motion.button>
+                  </motion.a>
                 </div>
               </motion.div>
             ))}

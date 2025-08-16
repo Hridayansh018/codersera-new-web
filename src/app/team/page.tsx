@@ -154,39 +154,11 @@ const coreMembers: TeamMember[] = [
         position: 'IOT LEAD',
         linkedin: 'https://www.linkedin.com/in/simmisingh1?trk=contact-info',
         instagram: 'https://www.instagram.com/simmiiii_singh?igsh=MndlaG85Zno2Nngy'
-    },
-    {
-        img: '/photos/kajal.jpg',
-        name: 'KAJAL MISHRA',
-        position: 'COORDINATOR ',
-        linkedin: '#',
-        instagram: '#'
-    },          
-    {
-        img: '/photos/divyanshi.jpg',
-        name: 'DIVYANSHI',
-        position: 'COORDINATOR',
-        linkedin: '#',
-        instagram: 'https://www.instagram.com/divyanshi_goyl/'
-    },
-    {
-        img: '/photos/suhani.jpg',
-        name: 'SUHANI',
-        position: 'COORDINATOR',
-        linkedin: '#',
-        instagram: 'https://www.instagram.com/suhanibansal67/'
-    },
-    {
-        img: '/photos/sakshi.jpg',
-        name: 'SAKSHI',
-        position: 'COORDINATOR',
-        linkedin: '#',
-        instagram: 'https://www.instagram.com/sakshi_dubey_0004/'
-    },
+    },         
     {
         img: '/photos/SRISHTI.jpg',
         name: 'SRISHTI',
-        position: 'COORDINATOR',
+        position: 'REACH TEAM',
         linkedin: '#',
         instagram: 'https://www.instagram.com/srishtiii_kumari/'
     },
@@ -203,29 +175,7 @@ const coreMembers: TeamMember[] = [
         position: 'COORDINATOR & EDITOR',
         linkedin: '#',
         instagram: 'https://www.instagram.com/iownxeno/'
-    },
-
-    {
-        img: '/photos/varnika.jpg',
-        name: 'VARNIKA OJHA',
-        position: 'COORDINATOR',
-        linkedin: '#',
-        instagram: 'https://www.instagram.com/varnika_ojha/'
-    },
-    {
-        img: '/photos/kaustubhi.jpg',
-        name: 'KAUSTUBHI DUTTA',
-        position: 'COORDINATOR ',
-        linkedin: '#',
-        instagram: '#'
-    },
-    {
-        img: '/photos/vanshika.jpg',
-        name: 'VANSHIKA SINGH',
-        position: 'COORDINATOR ',
-        linkedin: '#',
-        instagram: '#'
-    },
+    },  
     {
         img: '/photos/anshika.jpg',
         name: 'ANSHIKA MISHRA ',
@@ -240,44 +190,10 @@ const coreMembers: TeamMember[] = [
         linkedin: '#',
         instagram: '#'
     },
-    {
-        img: '/photos/keshav.jpg',
-        name: 'KESHAV',
-        position: 'COORDINATOR ',
-        linkedin: '#',
-        instagram: '#'
-    },
-    {
-        img: '/photos/lakshya.jpg',
-        name: 'LAKSHYA',
-        position: 'COORDINATOR ',
-        linkedin: '#',
-        instagram: '#'
-    },
-    {
-        img: '/photos/rishu.jpg',
-        name: 'RISHU JHA',
-        position: 'COORDINATOR ',
-        linkedin: '#',
-        instagram: '#'
-    },
-    {
-        img: '/photos/aakrity.jpg',
-        name: 'AAKRITY SINGH',
-        position: 'COORDINATOR ',
-        linkedin: '#',
-        instagram: '#'
-    },
+   
     {
         img: '/photos/divyanshu.jpg',
         name: 'DIVYANSHSU ANAND',
-        position: 'COORDINATOR ',
-        linkedin: '#',
-        instagram: '#'
-    },
-    {
-        img: '/photos/krati.jpg',
-        name: 'KRATI CHAUHAN',
         position: 'COORDINATOR ',
         linkedin: '#',
         instagram: '#'

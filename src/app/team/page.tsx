@@ -48,7 +48,7 @@ const leaders: TeamMember[] = [
         instagram: 'https://www.instagram.com/aranjay.14/'
     },
     {
-        img: '/photos/yasharth.png',
+        img: '/photos/yasharth.jpg',
         name: 'YASHARTH SHRINET',
         position: 'HEAD COORDINATOR',
         linkedin: '#',
@@ -121,7 +121,7 @@ const coreMembers: TeamMember[] = [
         instagram: '#'
     },
     {
-        img: '/photos/hardy.png',
+        img: '/photos/Hridayansh.jpg',
         name: 'HRIDYANSH',
         position: 'TECH-LEAD',
         linkedin: 'https://www.linkedin.com/in/hridayansh-awasthi-0095a12b6/',
@@ -212,7 +212,7 @@ const coreMembers: TeamMember[] = [
         instagram: '#'
     },
     {
-        img:'/photos/neelu.jpg',
+        img:'/photos/neelaksh.jpg',
         name:"NEELAKSH",
         position:'COORDINATOR',
         linkedin:'https://www.linkedin.com/in/neelaksh-sharma-b66665335/',
